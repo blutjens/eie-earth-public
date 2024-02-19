@@ -1,0 +1,50 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 2                             
+              center_crop: False                         
+          checkpoints_dir: pretrained/PhysicsInformedBicycleGAN/	[default: ./checkpoints]
+            conditional_D: False                         
+                crop_size: 256                           
+                 dataroot: xBD                           	[default: None]
+             dataset_mode: physics_aligned_bin           	[default: aligned]
+                direction: AtoB                          
+          display_winsize: 256                           
+                    epoch: latest                        
+                     eval: False                         
+                  gpu_ids: 1                             	[default: 0]
+                init_gain: 0.02                          
+                init_type: xavier                        
+                 input_nc: 6                             	[default: 3]
+                  isTrain: False                         	[default: None]
+                load_size: 286                           
+         max_dataset_size: inf                           
+                    model: bicycle_gan                   
+                n_samples: 5                             
+                     name: conditional_binary            	[default: ]
+                      ndf: 64                            
+                      nef: 64                            
+                     netD: basic_256_multi               
+                    netD2: basic_256_multi               
+                     netE: resnet_256                    
+                     netG: unet_256                      
+                      ngf: 64                            
+                       nl: relu                          
+                no_encode: False                         
+                  no_flip: False                         
+                     norm: instance                      
+                   num_Ds: 2                             
+                 num_test: 150                           	[default: 50]
+              num_threads: 4                             
+                       nz: 8                             
+                output_nc: 6                             	[default: 3]
+                    phase: val                           
+               preprocess: resize_and_crop               
+              results_dir: temp/PhysicsInformedBicycleGAN/	[default: ../results/]
+           serial_batches: False                         
+                   suffix:                               
+                     sync: False                         
+                 upsample: basic                         
+              use_dropout: False                         
+                  verbose: False                         
+                where_add: all                           
+----------------- End -------------------
